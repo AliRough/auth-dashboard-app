@@ -33,6 +33,7 @@ export default function AuthPage() {
         <div className={styles.inputGroup}>
           <Input
             value={phone}
+            type={'tel'}
             onChange={setPhone}
             placeholder="Enter your phone number"
             error={error}
