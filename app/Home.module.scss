@@ -1,0 +1,75 @@
+// Home.module.scss
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background: linear-gradient(to right, #eef2ff, #c7d2fe);
+  padding: 2rem;
+}
+
+.heroCard {
+  background-color: white;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: #1f2937;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 1rem 0 2rem;
+    color: #4b5563;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #4f46e5;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.2rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: #4338ca;
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 480px) {
+  .heroCard {
+    padding: 2rem 1.5rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+
+    .links .link {
+      font-size: 0.9rem;
+      padding: 0.6rem 1rem;
+    }
+  }
+}
